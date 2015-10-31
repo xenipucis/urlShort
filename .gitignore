@@ -14,3 +14,10 @@
 .settings/org.eclipse.jdt.core.prefs
 .settings/org.eclipse.wst.common.component
 .settings/org.eclipse.wst.common.project.facet.core.xml
+.gradle/2.8/taskArtifacts/cache.properties
+.gradle/2.8/taskArtifacts/cache.properties.lock
+.gradle/2.8/taskArtifacts/fileHashes.bin
+.gradle/2.8/taskArtifacts/fileSnapshots.bin
+.gradle/2.8/taskArtifacts/outputFileStates.bin
+.gradle/2.8/taskArtifacts/taskArtifacts.bin
+.springBeans
