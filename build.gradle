@@ -41,6 +41,8 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-thymeleaf')
     compile('org.springframework.boot:spring-boot-starter-web')
     compile('javax.servlet:jstl:1.2')
+    compile('commons-validator:commons-validator:1.4.1')
+    compile('com.google.guava:guava:18.0')
     providedRuntime('org.springframework.boot:spring-boot-starter-tomcat')
     testCompile('org.springframework.boot:spring-boot-starter-test') 
 }
