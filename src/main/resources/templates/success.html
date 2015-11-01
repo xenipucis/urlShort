@@ -10,7 +10,7 @@
 			<div class="registerURLForm">
 				<h1>Register new URL successfully completed.</h1>
 			</div>
-			<div class="urlText" th:text="${url}">New URL text</div>&nbsp;->&nbsp;<div class="urlShortText" th:text="${url_short}">Short URL text</div>
+			<div class="urlText" th:text="${url}">New URL text</div>&nbsp;-><div id="urlShortText" class="urlShortText" th:text="${url_short}">Short URL text</div>&nbsp;(Please, Ctrl+C it; you'll need to paste it in the next screen.)
 			
 			<div class="verify">
 				<a th:href="@{/browse}">Browse URL</a>
