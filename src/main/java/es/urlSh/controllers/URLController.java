@@ -2,7 +2,6 @@ package es.urlSh.controllers;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
-import java.util.Map;
 
 import javax.servlet.http.HttpServletResponse;
 
@@ -19,12 +18,20 @@ import com.google.common.hash.Hashing;
 @Controller
 public class URLController {
 
-	@Autowired
 	private StringRedisTemplate redis;
+	
+	public URLController() {
+		
+	}
+	
+	@Autowired
+	public URLController(StringRedisTemplate redis) {
+		this.redis = redis;
+	}
 	
 	@RequestMapping(value="/register", method=RequestMethod.GET) 
 	public String register() {
-		return "register";
+		return "registerForm";
 	}
 	
 	@RequestMapping(value="/register", method=RequestMethod.POST) 
@@ -43,7 +50,7 @@ public class URLController {
 	
 	@RequestMapping(value="/browse")
 	public String addUrlForBrowsing() {
-		return "browse";
+		return "browseForm";
 	}
 	
 	@RequestMapping(value="/browse", method=RequestMethod.POST) 
