@@ -9,10 +9,12 @@
 		<div id="content">
 			<div class="registerURLForm">
 				<h1>Register new URL:</h1>
-				<form method="POST" name="registerURLForm">
-					<input type="url" name="url"></input>
+				<form method="POST" name="registerURLForm" id="registerURLForm">
+					<!-- <input type="url" name="url"></input> -->
 					<input type="submit" value="Add" ></input> 
 				</form>
+				
+				<textarea name="url" rows="10" cols="50" maxlength="8000" form="registerURLForm" autofocus="true">Enter your URL here...</textarea>
 			</div>
 		</div>
 	</body>	
